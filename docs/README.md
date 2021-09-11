@@ -30,3 +30,9 @@ Por último, la arquitectura sigue un modelo de acceso de memoria NORMA y un mod
 ## Time record
 
 A continuación puede observar el tiempo dedicado a las tareas realizadas. [Time Record](https://github.com/DavidPDP/th-assessment/blob/main/docs/Toggl_Track_summary_report_2021-09-10_2021-09-10.pdf).
+
+## Git Flow Tree
+
+A continuación se puede observar el árbol del git flow llevado a cabo.
+
+![Git flow tree](https://github.com/DavidPDP/th-assessment/blob/main/docs/git-flow-tree.png)
