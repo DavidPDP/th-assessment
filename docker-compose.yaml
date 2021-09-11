@@ -1,14 +1,15 @@
 version: '3'
 
 services:
-  docker-mysql:
+  mysqldb:
     image: mysql:8.0.26
+    container_name: mysqldb
+    hostname: mysqldb
     volumes:
-      - ./deploy:/tmp
-    command: mysqld --init-file="/tmp/payroll-ddl.sql"
+      - "./deploy:/docker-entrypoint-initdb.d"
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=database
+      - MYSQL_DATABASE=fonyou
       - MYSQL_USER=fonyou
       - MYSQL_PASSWORD=fonyou
     ports:
@@ -16,9 +17,11 @@ services:
 
   app:
     build: ./core
+    container_name: app
     ports:
-       - 8091:8091
+       - 8091:8080
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://docker-mysql:3306/database?autoReconnect=true&useSSL=false
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/fonyou
+    command: sh -c './wait-for-it.sh mysqldb:3306 --timeout=0 && catalina.sh run'
     depends_on:
-       - docker-mysql
+       - mysqldb
