@@ -21,3 +21,9 @@ El diseño se ve fuertemente influenciado por los atributos de calidad como por 
 * Disponibilidad: Por falta de recursos no se puedo desarrollar plenamente este inciso. Aunque la aplicación está diseñada para poder multi-instanciarla no se tienen a mano credenciales para alguna cloud (todas ya las gasté). Pero dado el diseño se debería proceder a proponer un proxy balanceador de carga que tenga funciones de confiabilidad (como HAproxy) para implementar una estrategia de balanceo de carga con verificación de salud de las instancias y recuperación de las mismas en caso de que hayan fallos.
 
 Por último, la arquitectura sigue un modelo de acceso de memoria NORMA y un modelo de proceso SISD según la taxonomía de Flynn con un grano medio a nivel de la transacción que ofrece el API.
+
+## Consideraciones
+
+1. Analizando las necesidades se puede notar que lo necesario por parte del back-end sería el CRUD de Employee. El cálculo del salario se debería pasar al front-end quitandole carga innecesaria al servidor. Los datos suministrados para este cálculo tienen la misma sensibilidad que el usuario que lo obtiene. Por lo que no es un impedimento para estar en el front-end distribuyendo la carga entre los usuarios que consulten.
+2. Hay que recordar que según la programación orientada a objetos y sus principios, cada objeto debe ser responsable de su propio estado. Esto no solo va en vía con los principios S.O.L.I.D sino que permite aumentar la cohesión y disminuir el acomplamiento por lo que es una buena práctica. Si es extraño que los cálculos del propio estado del objeto lo realice la propia entidad del modelo puede consultar a [Matin Fowler](https://martinfowler.com/bliki/AnemicDomainModel.html).
+3. Se utilizó la libraría Lombok para evitar el boilerplate utilizando las anotaciones que proceden en tiempo de compilación.
