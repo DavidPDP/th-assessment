@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "6d469500-c8ed-465d-ad6b-7bd981802b8e",
-		"name": "Employees",
+		"_postman_id": "4f64ced9-7a40-42c5-aa0f-b34a57ca8dc1",
+		"name": "Employees Prod",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -20,13 +20,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/employees",
+					"raw": "http://localhost:8091/core-1.0.0/employees",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees"
 					]
 				}
@@ -48,13 +49,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/employees",
+					"raw": "http://localhost:8091/core-1.0.0/employees",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees"
 					]
 				}
@@ -76,13 +78,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/employees",
+					"raw": "http://localhost:8091/core-1.0.0/employees",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees"
 					]
 				}
@@ -104,13 +107,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/employees",
+					"raw": "http://localhost:8091/core-1.0.0/employees",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees"
 					]
 				}
@@ -132,13 +136,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/employees",
+					"raw": "http://localhost:8091/core-1.0.0/employees",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees"
 					]
 				}
@@ -151,13 +156,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employees/4",
+					"raw": "http://localhost:8091/core-1.0.0/employees/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees",
 						"4"
 					]
@@ -171,13 +177,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employees/3",
+					"raw": "http://localhost:8091/core-1.0.0/employees/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees",
 						"3"
 					]
@@ -191,13 +198,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employees/1/pay?year=2018&month=9",
+					"raw": "http://localhost:8091/core-1.0.0/employees/1/pay?year=2018&month=9",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees",
 						"1",
 						"pay"
@@ -222,13 +230,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employees/1/pay?year=2018&month=10",
+					"raw": "http://localhost:8091/core-1.0.0/employees/1/pay?year=2018&month=10",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees",
 						"1",
 						"pay"
@@ -253,13 +262,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employees/2/pay?year=2018&month=7",
+					"raw": "http://localhost:8091/core-1.0.0/employees/2/pay?year=2018&month=7",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees",
 						"2",
 						"pay"
@@ -284,13 +294,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employees/2/pay?year=2019&month=11",
+					"raw": "http://localhost:8091/core-1.0.0/employees/2/pay?year=2019&month=11",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees",
 						"2",
 						"pay"
@@ -315,13 +326,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employees/2/pay?year=2018&month=6",
+					"raw": "http://localhost:8091/core-1.0.0/employees/2/pay?year=2018&month=6",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees",
 						"2",
 						"pay"
@@ -346,13 +358,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employees/3/pay?year=2019&month=4",
+					"raw": "http://localhost:8091/core-1.0.0/employees/3/pay?year=2019&month=4",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8091",
 					"path": [
+						"core-1.0.0",
 						"employees",
 						"3",
 						"pay"
