@@ -171,10 +171,18 @@ public class Employee {
 	}
 	
 	public void checkIsValidEmployee() throws InvalidEntityException {
+		hasNonNullValues();
 		isBaseSalaryNonNegative();
 		hasNonBlankFields();
 		isStartDateGreaterThanEndDate();
 		isStartDateGreaterThan1900();
+	}
+	
+	private void hasNonNullValues() throws InvalidEntityException {
+		if(firstName == null || lastName == null 
+				|| startDate == null || baseSalary == null) {
+			throw new InvalidEntityException("no required field can be null.");
+		};
 	}
 	
 	private void isBaseSalaryNonNegative() throws InvalidEntityException {
