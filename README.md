@@ -60,3 +60,7 @@ vim docker-compose.yml
 ...
 
 ```
+
+## Postman
+
+Las colecciones de postman se divide en [local](https://github.com/DavidPDP/th-assessment/blob/main/docs/api/Employees.postman_collection.json) cuando se ejecuta el proyecto con el maven wrapper y [producción](https://github.com/DavidPDP/th-assessment/blob/main/docs/api/Employees%20Prod.postman_collection.json) cuando se ejecuta por medio del docker compose.
