@@ -1,8 +1,7 @@
-# Análisis
-
+# th-assessment
 La aplicación se desarrolla bajo una metodología prescriptiva (cascada). Aunque pueda parecer contraproducente no lo es. Esto se debe a que es un problema cuya naturaleza es conocida. Un API REST sobre protocolo HTTP presenta problemas ampliamente estudiados a lo largo de la historia de la ingeniería de software, por lo que optar por un modelo donde se procede a realizar cada fase teniendo en cuenta el conocimiento requerido y considerable para desarrollarla de manera óptima, vuelve este modelo de desarrollo uno de los más sensatos. Cabe resaltar que el proyecto tiene un limite por ser una prueba por lo que su evolución queda coartada a la finalización del mismo.
 
-## Análisis DDD
+## Analisis
 
 DDD ofrece una filosófia para pensar desde el negocio. Teniendo en cuenta que la premisa de la ingenería de software con respecto a la sociedad es soportar el cumplimiento de la misión del cliente de la manera más efectiva. Es aquí donde esta filosofía nos permite explorar los maticez de negocio que próximamente se convertiran en conceptos para modelar el mismo sistema. A continuación se presenta el análisis DDD con respecto a la parte técnica deducida de las necesidades estipuladas.
 
@@ -27,3 +26,7 @@ Por último, la arquitectura sigue un modelo de acceso de memoria NORMA y un mod
 1. Analizando las necesidades se puede notar que lo necesario por parte del back-end sería el CRUD de Employee. El cálculo del salario se debería pasar al front-end quitandole carga innecesaria al servidor. Los datos suministrados para este cálculo tienen la misma sensibilidad que el usuario que lo obtiene. Por lo que no es un impedimento para estar en el front-end distribuyendo la carga entre los usuarios que consulten.
 2. Hay que recordar que según la programación orientada a objetos y sus principios, cada objeto debe ser responsable de su propio estado. Esto no solo va en vía con los principios S.O.L.I.D sino que permite aumentar la cohesión y disminuir el acomplamiento por lo que es una buena práctica. Si es extraño que los cálculos del propio estado del objeto lo realice la propia entidad del modelo puede consultar a [Matin Fowler](https://martinfowler.com/bliki/AnemicDomainModel.html).
 3. Se utilizó la libraría Lombok para evitar el boilerplate utilizando las anotaciones que proceden en tiempo de compilación.
+
+## Time record
+
+A continuación puede observar el tiempo dedicado a las tareas realizadas. [Time Record](https://github.com/DavidPDP/th-assessment/blob/main/docs/Toggl_Track_summary_report_2021-09-10_2021-09-10.pdf).
